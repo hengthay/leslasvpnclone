@@ -1,0 +1,434 @@
+<!doctype html>
+  <html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>LasLesVPN Clone</title>
+  </head>
+  <body>
+    <header class="fixed top-0 left-0 right-0 bg-white z-50" data-aos="zoom-in-up" data-aos-delay="300" id="navbar">
+      <nav class="max-w-[1440px] container mx-auto py-4 md:px-4 !px-10 flex justify-between items-center space-x-4">
+        <div class="flex justify-center items-center">
+          <a href="" class="flex justify-center items-center">
+            <img src="./images/logo.png" alt="" class="h-8 mr-1">
+            <span class="font-bold text-primary">LasLesVPN</span>
+          </a>
+        </div>
+
+        <ul class="hidden md:flex items-center space-x-6">
+          <li><a href="#about" class="md:text-base text-base hover:text-red-500 transition duration-300">About</a></li>
+          <li><a href="#feature" class="md:text-base text-base hover:text-red-500 transition duration-300">Feature</a></li>
+          <li><a href="#pricing" class="md:text-base text-base hover:text-red-500 transition duration-300">Pricing</a></li>
+          <li><a href="#testimonials" class="md:text-base text-base hover:text-red-500 transition duration-300">Testimonials</a></li>
+          <li><a href="#help" class="md:text-base text-base hover:text-red-500 transition duration-300">Help</a></li>
+        </ul>
+
+        <div class="ml-1 space-x-2 flex">
+          <button class="hover:text-red-500 cursor-pointer transition duration-300 font-bold md:text-lg text-base">Sign In</button>
+          <button class="border-1 border-red-500 py-2 px-4 rounded-full cursor-pointer font-bold md:text-lg text-base text-rediry hover:bg-red-500 hover:text-white transition duration-300">Sign Up</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section-container flex md:flex-row flex-col gap-12 items-center" id="about">
+      <div class="md:w-1/2 mb-8 md:mb-0 space-y-8" data-aos="fade-right" data-aos-delay="300">
+        <h1 class="lg:text-5xl md:text-4xl text-3xl text-primary font-bold">
+          Want anything to be <br class="lg:block hidden"> easy with LaslesVPN.
+        </h1>
+        <p class="text-lg w-full my-8 max-w-xl leading-relaxed">Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
+        <button class="my-5 bg-rediry py-4 px-20 font-bold text-white rounded-lg shadow-md transition duration-300 hover:bg-rediry/70 hover:shadow-lg shrink-0 cursor-pointer">
+          Get Started
+        </button>
+      </div>
+      <div class="md:w-1/2 " data-aos="fade-left" data-aos-delay="500">
+        <img src="./images/banner.png" alt="Hero-Logo" class="w-full">
+      </div>
+    </section>
+
+    <!-- Statistics section -->
+    <section class="section-container" id="about">
+      <div class="bg-white shadow-lg shadow-gray-300 p-8 rounded-xl flex md:flex-row flex-col items-center justify-around divide-y md:divide-y-0 md:divide-x divide-gray-200" data-aos="fade-up" data-aos-delay="500">
+        <div class="flex items-center justify-center gap-6 px-12 py-6 md:py-0">
+          <div class="bg-red-200 p-3 rounded-full  shrink-0">
+            <img src="./images/user.png" alt="User" class="w-8 h-8">
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="font-bold text-xl">90+</h2>
+            <span class="text-xl">Users</span>
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-center gap-6 px-12 py-6 md:py-0  shrink-0">
+          <div class="bg-red-200 p-3 rounded-full">
+            <img src="./images/location.png" alt="User" class="w-8 h-8">
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="font-bold text-xl">30+</h2>
+            <span class="text-xl">Location</span>
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-center gap-6 px-12 py-6 md:py-0  shrink-0">
+          <div class="bg-red-200 p-3 rounded-full">
+            <img src="./images/storage.png" alt="User" class="w-8 h-8">
+          </div>
+          <div class="space-y-1.5">
+            <h2 class="font-bold text-xl">50+</h2>
+            <span class="text-xl">Servers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature section -->
+    <section class="section-container" id="feature">
+      <div class="flex md:flex-row flex-col items-center justify-center gap-12">
+        <div class="md:w-1/2" data-aos="fade-up-right" data-aos-delay="300">
+          <img src="./images/features.png" alt="w-full">
+        </div>
+        <div class="md:w-1/2 space-y-8" data-aos="fade-up-left" data-aos-delay="400">
+          <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold max-sm:text-center mb-8 leading-tight">
+            We Provide Many <br class="lg:block hidden"> Features You Can Use
+          </h1>
+          <p class="max-sm:text-center text-xl mb-8 max-w-xl leading-relaxed">You can explore th features that we provide with fun and have their own functions each feature.</p>
+          
+          <ul class="space-y-4 md:px-0 px-4">
+            <li class="flex items-center">
+              <img src="./images/tick.png" alt="tick" class="h-4 w-4">
+              <span class="ml-4 text-lg">Powerfull online protection.</span>
+            </li>
+            <li class="flex items-center">
+              <img src="./images/tick.png" alt="tick" class="h-4 w-4">
+              <span class="ml-4 text-lg">Internet without borders.</span>
+            </li>
+            <li class="flex items-center">
+              <img src="./images/tick.png" alt="tick" class="h-4 w-4">
+              <span class="ml-4 text-lg"> Supercharged VPN.</span>
+            </li>
+            <li class="flex items-center">
+              <img src="./images/tick.png" alt="tick" class="h-4 w-4">
+              <span class="ml-4 text-lg">No specific time limits.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- pricing section -->
+    <section class="bg-gray-100" id="pricing">
+      <div class="section-container">
+        <div class="space-y-4" data-aos="fade-in" data-aos-delay="300">
+          <h1 class="font-semibold lg:text-4xl md:text-3xl text-2xl text-center">Choose Your Plan</h1>
+          <p class="text-lg text-center">Lets's choose the package that is best for you and explore it happily and cheerfully.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center py-12 gap-12" data-aos="fade-up" data-aos-delay="500">
+
+          <div class="flex justify-center items-center p-15 border border-gray-300 rounded-md transition transform duration-300 hover:scale-105">
+            <div class="">
+              <div class="mb-6 flex items-center justify-center">
+                <img src="./images/box.png" alt="Price" class="w-auto">
+              </div>
+              <div class="space-y-6">
+                <h1 class="text-xl font-bold text-center">Free Plan</h1>
+                <ul class="space-y-4 md:px-0 px-4  text-nowrap">
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Unlimited Bandwich</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Encrypted Connection</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">No Traffic Logs</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Works on All Devices</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-25 text-center">
+                <h1 class="text-xl font-bold mb-5">Free</h1>
+                <button>
+                  <a href="#" class="text-rediry font-bold border-2 border-rediry rounded-full py-3 px-15 transition duration-300 hover:bg-rediry hover:text-white hover:shadow-lg shadow-rediry">Select</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center p-15 border border-gray-300 rounded-md transition transform duration-300 hover:scale-105">
+            <div class="">
+              <div class="mb-6 flex items-center justify-center">
+                <img src="./images/box.png" alt="Price" class="w-auto">
+              </div>
+              <div class="space-y-6">
+                <h1 class="text-xl font-bold text-center">Standard Plan</h1>
+                <ul class="space-y-4 md:px-0 px-4 text-nowrap">
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Unlimited Bandwich</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Encrypted Connection</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Yes Traffic Logs</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Works on All Devices</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Connect Anyware</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="mt-14 text-center">
+                <h1 class="text-xl font-bold mb-5">$9 <span class="text-gray-400">/ mo</span></h1>
+                <button>
+                  <a href="#" class="text-rediry font-bold border-2 border-rediry rounded-full py-3 px-15 transition duration-300 hover:bg-rediry hover:text-white hover:shadow-lg shadow-rediry">Select</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center p-15 border-2 border-rediry rounded-md transition transform duration-300 hover:scale-105">
+            <div class="">
+              <div class="mb-6 flex items-center justify-center">
+                <img src="./images/box.png" alt="Price" class="w-auto">
+              </div>
+              <div class="space-y-6">
+                <h1 class="text-xl font-bold text-center">Premium Plan</h1>
+                <ul class="space-y-4 md:px-0 px-4  text-nowrap">
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Unlimited Bandwich</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Encrypted Connection</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Yes Traffic Logs</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Works on All Devices</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Connect Anyware</span>
+                  </li>
+                  <li class="flex items-center">
+                    <img src="./images/checkmark.png" alt="Checkmark" class="h-6 w-6">
+                    <span class="ml-4 text-lg">Get New Features</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="text-center mt-2">
+                <h1 class="text-xl font-bold mb-5">$12 <span class="text-gray-400">/ mo</span></h1>
+                <button>
+                  <a href="#" class="text-rediry font-bold border-2 border-rediry rounded-full py-3 px-15 transition duration-300 hover:bg-rediry hover:text-white hover:shadow-lg shadow-rediry">Select</a>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Network section -->
+    <section class="bg-gray-100">
+
+      <div class="section-container">
+        <div class="md:space-y-12 space-y-3">
+          <h1 class="lg:text-4xl md:text-3xl text-2xl text-center font-bold" data-aos="fade-up-left" data-aos-delay="300">Huge Global Network of Fast VPN</h1>
+          <p class="text-center text-xl" data-aos="fade-up-right" data-aos-delay="300">
+            See <span class="font-bold">LaslesVPN</span> everywhere to make it easier for you when you move locations.
+          </p>
+        </div>
+        
+        <!-- Map -->
+        <div class="flex items-center justify-center mt-14" data-aos="zoom-in-up" data-aos-delay="500">
+          <img src="./images/map.png" alt="Location" class="w-full">
+        </div>
+        
+        <!-- sponsor -->
+        <div class="flex flex-wrap justify-center items-center gap-14 mt-20 grayscale hover:grayscale-0" data-aos="zoom-out-down">
+          <img src="./images/netflix1.png" alt="Netflix" class="grayscale hover:grayscale-0 transition duration-300">
+          <img src="./images/reddit.png" alt="Reddit" class="grayscale hover:grayscale-0 transition duration-300">
+          <img src="./images/amazon1.png" alt="Amazon" class="grayscale hover:grayscale-0 transition duration-300">
+          <img src="./images/discord.png" alt="Discord" class="grayscale hover:grayscale-0 transition duration-300">
+          <img src="./images/spotify.png" alt="Spotify" class="grayscale hover:grayscale-0 transition duration-300">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section class="bg-gray-100 z-0 mb-20" id="testimonials">
+      <div class="section-container">
+        <div class="space-y-12 text-center mb-12">
+          <h1 class="lg:text-4xl md:text-3xl text-2xl font-bold leading-tight" data-aos="zoom-out-right" data-aos-delay="300">Trusted by Thousands of Happy Customer</h1>
+          <p class="text-xl max-w-xl mx-auto leading-relaxed" data-aos="zoom-out-left"
+          data-aos-delay="300">These are the stories of our customers who have joined us with great pleasure when using this crazy feature.</p>
+        </div>
+
+        <!-- testimonials slide -->
+        <div class="swiper testimonialSwiper" data-aos="fade-up"
+        data-aos-delay="500"
+        data-aos-anchor-placement="bottom-bottom">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            
+          </div>
+          
+          <div class="flex justify-between items-center mt-12">
+            <!-- pagination dots -->
+             <div class="swiper-pagination !relative !bottom-0"></div>
+             
+            <!-- navigation arrows -->
+             <div class="flex sm:!flex lg:!flex xl:!flex gap-4">
+                <div class="swiper-button-prev !static !w-[60px] !h-[60px] rounded-full border-2 border-[#F53855] text-[#F53855] hover:text-rediry">
+                  <img src="./images/arrow-left.png" alt="" >
+                </div>
+
+                <div class="swiper-button-next !static !w-[60px] !h-[60px] rounded-full border-2 border-[#F53855] bg-rediry hover:text-rediry">
+                  <img src="./images/arrow-right.png" alt="">
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe section -->
+    <section class="section-container relative" id="help">
+      <div class="flex md:flex-row flex-col items-center justify-between shadow-xl rounded-xl p-12 border-gray-500 absolute -top-32 left-10 right-10 z-10 bg-white" data-aos="fade-up" 
+      data-aos-delay="500"
+      data-aos-anchor-placement="top-center">
+        <div class="md:text-left text-center">
+          <h1 class="md:text-4xl md:w-2/3 text-2xl font-bold mb-5">Subscribe Now for Get Special Features</h1>
+          <p class="text-gray-500 mb-10 md:text-xl text-base">Let's subscribe with us and find the fun.</p>
+        </div>
+        <div>
+          <a href="" class="mt-10 py-4 px-16 font-semibold text-white bg-rediry shadow-xl shadow-rediry rounded-lg hover:bg-rediry/70 inline-block text-nowrap">Subscribe Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Footer -->
+    <section class="section-container">
+      <div class="grid md:grid-cols-4 grid-cols-1">
+        <div class="flex flex-col mr-20" data-aos="zoom-in-right" data-aos-delay="300">
+          <div class="flex items-center mb-6">
+            <img src="./images/logo.png" alt="Logo">
+            <p class="ml-3 text-xl">LasLes<span class="font-bold">VPN</span></p>
+          </div>
+          <div class="mb-6">
+            <p class="text-[15px] md:text-base">
+              LaslesVPN is a private virtual network that has unique features and has high security.
+            </p>
+          </div>
+          <div class="flex gap-6">
+            <a href="#" class="flex justify-center items-center h-12 w-12 shrink-0 shadow-lg text-rediry bg-white border-2 border-rediry rounded-full transition duration-300 hover:-translate-y-1.5">
+              <i class="fa-brands fa-facebook text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center h-12 w-12 shrink-0 shadow-lg text-rediry bg-white border-2 border-rediry rounded-full transition duration-300 hover:-translate-y-1.5">
+              <i class="fa-brands fa-twitter text-4xl"></i>
+            </a>
+            <a href="#" class="flex justify-center items-center h-12 w-12 shrink-0 shadow-lg text-rediry bg-white border-2 border-rediry rounded-full transition duration-300 hover:-translate-y-1.5">
+              <i class="fa-brands fa-instagram text-4xl"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="mr-20 mb-7" data-aos="zoom-out-left" data-aos-delay="500">
+          <h1 class="text-xl font-semibold md:mt-0 mt-5 mb-5">Product</h1>
+          <ul class="space-y-4 text-nowrap">
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Download</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Pricing</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Locations</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Server</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Countries</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mr-20 mb-7" data-aos="zoom-out-left" data-aos-delay="500">
+          <h1 class="text-xl font-semibold md:mt-0 mt-5 mb-5">Engage</h1>
+          <ul class="space-y-4 text-nowrap">
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">LaslesVPN?</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">FAQ</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Tutorials</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">About Us</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Privacy of Service</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mr-20 mb-7" data-aos="zoom-out-left" data-aos-delay="500">
+          <h1 class="text-xl font-semibold md:mt-0 mt-5 mb-5">Earn Money</h1>
+          <ul class="space-y-4 text-nowrap">
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Affiliate</a>
+            </li>
+            <li class="text-base md:text-lg hover:text-rediry/80 transition transform duration-300 hover:translate-x-1">
+              <a href="">Become Partner</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+    <script src="./js/app.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+  </body>
+</html>

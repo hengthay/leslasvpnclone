@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #0B132A;
+  --color-secondary: #4F5665;
+  --color-rediry: #F53838;
+
+}
+@layer components {
+  .section-container {
+    @apply max-w-[1440px] container mx-auto py-24 px-8;
+  }
+}
+
+.testimonialSwiper {
+
+}
+
+.swiper-button-next:after, .swiper-button-prev:after
+ {
+  display: none;
+}
